@@ -5,6 +5,8 @@
 - Category management
 - User profile support
 - Monthly reports
+- Send notification for expense, total income expense today to email user on 22h PM.
+
 
 Technologies for Backend
 - Java Spring Boot
