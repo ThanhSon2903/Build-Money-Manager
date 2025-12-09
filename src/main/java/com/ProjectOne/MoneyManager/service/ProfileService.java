@@ -34,10 +34,10 @@ public class ProfileService {
     @Autowired
     EmailService emailService;
 
-    @Autowired
-    PasswordEncoder passwordEncoder;
 
-    @Autowired
+    final PasswordEncoder passwordEncoder;
+
+
     final AuthenticationManager authenticationManager;
 
     @Autowired
