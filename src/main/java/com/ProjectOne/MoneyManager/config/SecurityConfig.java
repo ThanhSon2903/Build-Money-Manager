@@ -61,7 +61,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .cors(AbstractHttpConfigurer::disable) // tắt tạm CORS
+                .cors(Customizer.withDefaults()) // tắt tạm CORS
                 .csrf(AbstractHttpConfigurer::disable) // tắt CSRF
                 .authorizeHttpRequests(request -> request
                         .requestMatchers("/status","/health","/register","/login")
