@@ -4,6 +4,7 @@ HELP.md
 #!src/main/**/target/
 #!src/test/**/target/
 
+.env
 ### STS ###
 .apt_generated
 .classpath
@@ -12,7 +13,6 @@ HELP.md
 .settings
 .springBeans
 .sts4-cache
-.env
 ### IntelliJ IDEA ###
 .idea
 *.iws
