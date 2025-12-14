@@ -1,4 +1,4 @@
-## Money Manager System (The project is currently under development)
+## Money Manager System 
 
  Features
 - CRUD operations for income and expense transactions
