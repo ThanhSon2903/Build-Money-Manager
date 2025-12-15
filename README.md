@@ -12,7 +12,7 @@ Technologies for Backend
 - Java, Spring Boot
 - Spring Data JPA / Hibernate
 - MySQL
-- JWT & OAuth2 Authentication
+- JWT Authentication
 - Apache POI (Excel import/export)
 - Cloudinary (file storage)
 - Brevo API (email service)
