@@ -34,11 +34,11 @@ public class SecurityConfig {
 
     // Danh sách API public — dùng chung cho dev/prod
     private static final String[] PUBLIC_ENDPOINTS = {
-            "/api/v1.0/status",
-            "/api/v1.0/health",
-            "/api/v1.0/register",
-            "/api/v1.0/login",
-            "/api/v1.0/activate"
+            "/status",
+            "/health",
+            "/register",
+            "/login",
+            "/activate"
     };
 
     @Bean
