@@ -27,15 +27,18 @@ import java.util.Set;
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 public class JwtRequestFilter extends OncePerRequestFilter {
 
-
+    @Autowired
     AppUserDetailsService appUserDetailsService;
+
+    @Autowired
     JwtUtil jwtUtil;
 
     private static final Set<String> PUBLIC_ENDPOINTS = Set.of(
             "/api/v1.0/register",
             "/api/v1.0/login",
             "/api/v1.0/status",
-            "/api/v1.0/health"
+            "/api/v1.0/health",
+            "/api/v1.0/activate"
     );
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {

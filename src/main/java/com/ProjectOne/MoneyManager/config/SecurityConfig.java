@@ -34,10 +34,11 @@ public class SecurityConfig {
 
     // Danh sách API public — dùng chung cho dev/prod
     private static final String[] PUBLIC_ENDPOINTS = {
-            "/status",
-            "/health",
-            "/register",
-            "/login"
+            "/api/v1.0/status",
+            "/api/v1.0/health",
+            "/api/v1.0/register",
+            "/api/v1.0/login",
+            "/api/v1.0/activate"
     };
 
     @Bean
@@ -67,7 +68,8 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(PUBLIC_ENDPOINTS).permitAll()
-                        .anyRequest().authenticated()
+                        .anyRequest()
+                        .authenticated()
                 )
                 .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
