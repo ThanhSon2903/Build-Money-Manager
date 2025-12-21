@@ -73,6 +73,7 @@ public class ProfileService {
                 .id(profileDTO.getId())
                 .fullName(profileDTO.getFullName())
                 .email(profileDTO.getEmail())
+                .profileImageUrl(profileDTO.getProfileImageUrl())
                 .password(passwordEncoder.encode(profileDTO.getPassword()))
                 .createdAt(profileDTO.getCreatedAt())
                 .updatedAt(profileDTO.getUpdatedAt())
